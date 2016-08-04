@@ -30,9 +30,13 @@
 			$c = Administration::instance()->getPageCallback();
 			$c = $c['pageroot'];
 			
-			// Only add when editing a section
+			// Only add when editing a entry
 			if ($this->startsWith($c, '/publish/')) {
 				Administration::instance()->Page->addScriptToHead(URL.'/extensions/image_preview/assets/image_preview.js',time()+1);
+			}
+			// Only add when editing a section
+			if ($this->startsWith($c, '/blueprints/sections/')) {
+				Administration::instance()->Page->addStylesheetToHead(URL.'/extensions/image_preview/assets/image_preview.css');
 			}
 		}
 		

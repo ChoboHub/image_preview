@@ -21,6 +21,7 @@
 			- Supported on PHP 7.
 			- Fixed parameters to fit the parent method.
 			- Fixed database update.
+			- UI (css) fixes
 		</release>
 		<release version="2.3.2" date="2015-09-28" min="2.3" max="2.6.x">
 			- Added missing .field-multilingual_upload selector
